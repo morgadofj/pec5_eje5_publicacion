@@ -1,0 +1,122 @@
+{
+  "configVersion": 1,
+  "timestamp": 1560528970954,
+  "index": "https://morgadofj.github.io/pec5_eje5_publicacion/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://morgadofj.github.io/pec5_eje5_publicacion/10.052779de26c055a739b0.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/11.f9308fb9622ceb361a0e.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/5.de12c86e4badcaf5d17c.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/6.09aa4a8f8c8749dc3318.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/7.260de27b5645eba49735.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/8.a1f6f34887674f6b9ecf.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/9.2966dd1770b25c4c9361.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/common.1e3026df6a884a036099.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/favicon.ico",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/index.html",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/main.78742fa99ccd61d7d798.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/polyfills.4c5b9e56bee37e622d5a.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/runtime.27eb1dc7c8d95e74a4b9.js",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/styles.798f250c724621890431.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-128x128.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-144x144.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-152x152.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-192x192.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-384x384.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-512x512.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-72x72.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-96x96.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/angular2-logo.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/avatar.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/card-1.jpeg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/card-2.jpeg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/card-3.jpeg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/lock_bg.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/login_bg.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/marc.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/perfil.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/register_bg.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-1.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-2.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-3.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-4.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/uoc_logo.png",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/lock_bg.e22325c1cdc3a1591268.jpg",
+        "https://morgadofj.github.io/pec5_eje5_publicacion/login_bg.4e2f642c39de98d0e3c1.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://morgadofj.github.io/pec5_eje5_publicacion/10.052779de26c055a739b0.js": "0243c9421da7d952fe4a63fdcffdbf928195262e",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/11.f9308fb9622ceb361a0e.js": "7ba07dc5d876388f2a4d707e59f6dc44a0da900d",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/5.de12c86e4badcaf5d17c.js": "84734b2fe90febf750e352dc568b59af9dd325bd",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/6.09aa4a8f8c8749dc3318.js": "06515bc10b2c9d283fd28a785522895695f613b3",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/7.260de27b5645eba49735.js": "655abe5b2c1c5eb6eece4f25fdcd5084ed1915b9",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/8.a1f6f34887674f6b9ecf.js": "18fee3e992f6a20d7af44d0f8d98eb4bf246e665",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/9.2966dd1770b25c4c9361.js": "ab459089591c5ea28d057530080352f8c24142df",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/angular2-logo.png": "5404241b4099d817ce513e708c0ee1292cc05b22",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/avatar.jpg": "c28ef3a472aee1316ba6178cb7eb6307989690b3",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/card-1.jpeg": "34b06ea96c607eb7ba122214a571290141295b09",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/card-2.jpeg": "083b04c2cf1f0f54f483bcfbd0dad5a2bd155ae9",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/card-3.jpeg": "a2eb1ac502716c05d32d01ef01ab60a2a9ca62ef",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/lock_bg.jpg": "307ea255e7831a5edda35243a106a03c41140b82",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/login_bg.jpg": "aa5d0a52df5e87fc5a56fca446c58d1b96b6dc5e",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/marc.jpg": "c0f0f7090e945962a1f2a9f85b975f1ad73e5715",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/perfil.png": "c34d68aa614df190342bf4ccfb05fabce3561034",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/register_bg.jpg": "fceeeb3534cfbde5d3b333980e5f1ad06319ee34",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-1.jpg": "23c3e4ed9a23ac8c1facddc3a23f6b9140cb412d",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-2.jpg": "ed0fcb518fc923a30b391107458b1878468aff4b",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-3.jpg": "d5250777ad9a052cf6c94461b13c0a087c696632",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/sidebar-4.jpg": "eca6fcc00fdc988c3999ae05ba34a88690cf44b6",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/assets/img/uoc_logo.png": "a8268228316a687fc11a0ecbedb2507aedcccf39",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/common.1e3026df6a884a036099.js": "58de5be37fd24ae72182843bd7260211d377f2e6",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/index.html": "d6ef6b8c0c1b9420fa2a2a284d2c81c7874c529c",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/lock_bg.e22325c1cdc3a1591268.jpg": "307ea255e7831a5edda35243a106a03c41140b82",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/login_bg.4e2f642c39de98d0e3c1.jpg": "aa5d0a52df5e87fc5a56fca446c58d1b96b6dc5e",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/main.78742fa99ccd61d7d798.js": "005abf0605b28a9aa65b950c56d39343087cb7ee",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/polyfills.4c5b9e56bee37e622d5a.js": "ad54388e3f78ff96aaa4c3808b17569aa45c16c4",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/runtime.27eb1dc7c8d95e74a4b9.js": "aa86a2227a3b84f19cb02a1a3dd96c3f971fed04",
+    "https://morgadofj.github.io/pec5_eje5_publicacion/styles.798f250c724621890431.css": "5ecb718e0c991b445460e9ec85a4ca446a33cbf3"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

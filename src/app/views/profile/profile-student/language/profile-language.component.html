@@ -1,0 +1,63 @@
+
+<div class="card"  fxLayout="row" fxLayoutAlign="space-between center"  >
+
+  <div class="card-content" >
+      <div class="card-header">
+          <i class="material-icons">language</i>
+      </div>
+      <h4 class="card-title">Lenguaje-
+          <small class="category">Idioma</small>
+      </h4><br>
+    <form [formGroup]="rForm" (submit)="submit()" class="card-form">
+
+      <div  class="card-content-form"  fxLayout="row" fxLayoutAlign="space-around none"  >
+        <div class="form-group">
+          <mat-form-field color="accent">
+            <mat-label for="level">Nivel</mat-label>
+            <mat-select
+              [compareWith]="compareLevel"
+              name="level"
+              formControlName="level"
+            >
+              <mat-option [value]="level" *ngFor="let level of languageLevels">
+                {{ level.name }}  
+              </mat-option>
+            </mat-select>
+          </mat-form-field>  
+        </div>
+
+        <div class="form-group">
+          <mat-form-field color="accent">
+            <mat-label for="name">Idioma</mat-label>
+            <mat-select
+              name="name"
+              formControlName="name"
+              [compareWith]="compareName"
+            >
+              <mat-option [value]="name" *ngFor="let name of languageNames">
+                {{ name.name }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group">
+          <mat-form-field color="accent">
+            <mat-label for="date">Fecha de obtención del título</mat-label>
+            <input matInput
+              type="text"
+              name="date"
+              formControlName="date"
+            />
+          </mat-form-field>  
+        </div>
+        
+      </div>    
+      <div class="boton-form"   fxLayout="column" fxLayoutAlign="space-between center">
+          <button button mat-raised-button class="btn btn-rose btn-round"  type="submit" [disabled]="rForm.invalid">
+              Guardar
+          </button>
+      </div>   
+    </form>
+  </div>
+</div>  

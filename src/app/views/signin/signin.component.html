@@ -1,0 +1,61 @@
+<div class="background"></div>
+<div class="container">
+  <div class="container">
+    
+      <app-header> </app-header>
+    
+   
+     
+       <div class="card" fxLayoutAlign="center"> 
+         <div class="card-header">
+            <h4>Login</h4>
+           <div class="social-btns">
+             <button mat-icon-button><i class="fa fa-facebook-square"></i></button>
+             <button mat-icon-button><i class="fa fa-twitter"></i></button>
+             <button mat-icon-button><i class="fa fa-google-plus"></i></button>
+           </div>
+         </div>
+         <p class="tip"> Credenciales </p>
+         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="card-form">
+              <!--<div class="form-row">-->
+                <i class="material-icons">email</i>
+                <mat-form-field color="accent">
+                    <mat-label>Email </mat-label> 
+                    <mat-error *ngIf="loginForm.get('email').hasError('required')">
+                      email requerido
+                    </mat-error>
+                    <mat-error >
+                      Introduzca un email correcto
+                    </mat-error>
+
+                  <input matInput type="text" id="email" formControlName="email"/>
+
+                </mat-form-field>
+              <!--</div>-->
+              <!--<div class="form-row">-->
+                <i class="material-icons">lock_outline</i>
+                <mat-form-field color="accent">
+                  <input matInput type="password" id="password" formControlName="password"/>
+                  <mat-error *ngIf="loginForm.get('password').hasError('minlength')">
+                      Longitud minima 8 caracteres.
+                  </mat-error>  
+               </mat-form-field>
+              <!--</div>-->
+            </div>
+            <button class="card-footer" [disabled]="loginForm.invalid">
+                <mat-icon >account_box</mat-icon>
+                Login
+            </button>
+            <a routerLink="/forgot-password">Remember password</a>
+        </form>
+
+         <!--
+         <div class="card-footer">
+           <button mat-button (click)="loginBtn()">LET'S GO</button>
+         </div>
+         -->
+       </div>
+     </div>
+  
+</div>

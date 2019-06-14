@@ -1,0 +1,184 @@
+
+<div class="card" fxLayout="column" fxLayoutAlign="center" >
+    <div class="card-header">
+      <i class="material-icons">perm_identity</i>
+    </div>
+    <div *ngIf="user" id="contenido">
+        <div class="card-content" >
+          
+          <div class="datosPersonales" fxLayout="row" fxLayoutAlign="space-around start">
+            <h4 class="card-title">PROFILE-
+              <small class="category">Completa tus datos</small>
+            </h4>
+            <div class="float-left" id="foto-perfil">
+              <div>
+                <!-- <img mat-card-image
+                  class="imgAvatar"
+                  src="{{ user.avatar_hash }}"
+                  alt="Fotografia de {{user.name}}"
+                  >-->
+
+                  <img 
+                    class="imgAvatar"
+                    src="{{ user.avatar_hash }}"
+                    alt="Fotografia de {{user.name}}"
+                  >
+
+              </div>
+              
+                <mat-card>
+                  {{ user.name + ' ' + user.surname }}
+                </mat-card>
+              
+            </div>  
+        
+            <section id="datosPersonales" class="float-left">
+              <mat-card>Email: {{ user.email }} </mat-card>
+              <mat-card>Fecha de nacimiento: {{ user.birthdate }}</mat-card>
+              <mat-card>Tel&eacute;fono: {{ user.phone }}</mat-card>
+              <mat-card>NIF/NIE: {{ user.documentNumber }}</mat-card>
+              <mat-card>Permisos de conducir: {{ user.license }}</mat-card>
+              <mat-card>Direccion: {{ user.address | json }}</mat-card>
+          
+              <a  mat-raised-button class="btn btn-rose btn-round"  [routerLink]="['/admin/profile/profile-student/account']">Modificar</a>
+            </section>
+          
+            <div id="otra_info" class="float-left"  fxLayout="column" fxLayoutAlign="space-around end">
+               
+                <mat-form-field color="accent">
+                    <mat-label class="textarea-label">Acerca de mi</mat-label>
+                    <textarea matInput readonly="true" id="about-me" name="about-me">
+                        {{user.aboutMe}}
+                    </textarea>
+                </mat-form-field>
+
+                <mat-form-field color="accent">
+                    <mat-label class="textarea-label">Otras competencias</mat-label>
+                    <textarea matInput  readonly="true" id="other" name="other">
+                        {{user.otherCompetences}}
+                    </textarea>
+                </mat-form-field>
+              
+            </div>
+          </div>  
+          <div class="seccionTablas">
+            <section style="clear:both;padding-bottom:4em;"></section>
+              <mat-card-subtitle>
+                Formaci&oacute;n acad&eacute;mica
+              </mat-card-subtitle>
+              <section id="formacion_academica">
+            
+
+              <div class="example-container mat-elevation-z8">
+                <table mat-table [dataSource]="user.studies">
+                      <ng-container matColumnDef="tipo">
+                          <th mat-header-cell *matHeaderCellDef> tipo </th>
+                          <td mat-cell *matCellDef="let study"> {{study.level.name}} </td>
+                      </ng-container>
+                      <ng-container matColumnDef="nivel">
+                          <th mat-header-cell *matHeaderCellDef> nivel </th>
+                          <td mat-cell *matCellDef="let study"> {{study.grade?.name}} </td>
+                      </ng-container>
+                      
+                
+                      <ng-container matColumnDef="titulo">
+                          <th mat-header-cell *matHeaderCellDef> T&iacute;tulo </th>
+                          <td mat-cell *matCellDef="let study"> {{study.title.name || study.title }} </td>
+                      </ng-container>
+                          
+                      <ng-container matColumnDef="centro">
+                          <th mat-header-cell *matHeaderCellDef> centro </th>
+                          <td mat-cell *matCellDef="let study"> {{ study.institution.name || study.institution }} </td>
+                      </ng-container>
+                      
+                      <ng-container matColumnDef="fecha">
+                          <th mat-header-cell *matHeaderCellDef> fecha </th>
+                          <td mat-cell *matCellDef="let study"> {{study.date}} </td>
+                      </ng-container>
+                      
+                      <ng-container matColumnDef="certificado">
+                          <th mat-header-cell *matHeaderCellDef> certificado </th>
+                          <td mat-cell *matCellDef="let study"> {{study.certificate ? 'Sí' : 'No'}} </td>
+                      </ng-container>
+                      
+                      <ng-container matColumnDef="bilingue">
+                          <th mat-header-cell *matHeaderCellDef> Bilingüe </th>
+                          <td mat-cell *matCellDef="let study"> {{study.bilingue ? 'Sí' : 'No'}} </td>
+                      </ng-container>
+                      
+                      <ng-container matColumnDef="dual">
+                          <th mat-header-cell *matHeaderCellDef> dual </th>
+                          <td mat-cell *matCellDef="let study"> {{study.dual ? 'Sí' : 'No'}} </td>
+                      </ng-container>
+
+                      <ng-container matColumnDef="accion">
+                          <th mat-header-cell *matHeaderCellDef> accion </th>
+                          <td mat-cell *matCellDef="let study"> 
+                            <a  mat-raised-button class="btn btn-rose btn-round"  [routerLink]="['/admin/profile/profile-student/study', study.uid]">
+                              Editar
+                            </a>
+                            <a  mat-raised-button class="btn btn-rose btn-round"   style="cursor:pointer" (click)="deleteStudy(study.uid)">
+                              Borrar
+                            </a>
+                        </td>
+                      </ng-container>
+                      
+                      <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+                      <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplay"></tr>
+                </table> 
+              </div>     
+              
+                <a mat-raised-button class="btn btn-rose btn-round" [routerLink]="['/admin/profile/profile-student/study']"
+                  >Nueva formación</a
+                >
+            </section>
+            <br>
+            <mat-card-subtitle>
+              Idiomas
+            </mat-card-subtitle>
+            <section id="languages">
+                <div class="example-container mat-elevation-z8">
+                  <table mat-table [dataSource]="user.languages">
+                        <ng-container matColumnDef="nivel">
+                            <th mat-header-cell *matHeaderCellDef> Nivel </th>
+                            <td mat-cell *matCellDef="let language"> {{language.level.name}} </td>
+                        </ng-container>
+                        <ng-container matColumnDef="idioma">
+                            <th mat-header-cell *matHeaderCellDef> Idioma </th>
+                            <td mat-cell *matCellDef="let language"> {{language.name.name}} </td>
+                        </ng-container>
+                        
+          
+                        <ng-container matColumnDef="fecha">
+                            <th mat-header-cell *matHeaderCellDef>Fecha</th>
+                            <td mat-cell *matCellDef="let language"> {{language.date}} </td>
+                        </ng-container>
+                                          
+              
+                        <ng-container matColumnDef="accion">
+                            <th mat-header-cell *matHeaderCellDef> accion </th>
+                            <td mat-cell *matCellDef="let language"> 
+                              <a  mat-raised-button class="btn btn-rose btn-round" [routerLink]="['/admin/profile/profile-student/language', language.uid]">
+                                Editar
+                              </a>
+                              <a  mat-raised-button class="btn btn-rose btn-round"  style="cursor:pointer" (click)="deleteLanguage(language.uid)">
+                                Borrar
+                              </a>
+                          </td>
+                        </ng-container>
+                        
+                        <tr mat-header-row *matHeaderRowDef="columnsToDisplayId"></tr>
+                        <tr mat-row *matRowDef="let myRowData; columns: columnsToDisplayId"></tr>
+                  </table> 
+                </div>     
+                <a  mat-raised-button class="btn btn-rose btn-round"  [routerLink]="['/admin/profile/profile-student/language']">
+                  Nuevo idioma
+                </a>
+            </section>
+          </div>  
+        </div>  
+    </div>
+    <div *ngIf="!user" id="contenido">
+        <p>Datos están siendo cargados...</p>
+    </div>
+</div>      
